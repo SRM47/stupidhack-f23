@@ -1,6 +1,4 @@
 // Make the DIV element draggable:
-dragElement(document.getElementById("title"));
-
 function dragElement(elmnt) {
   var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
   if (document.getElementById(elmnt.id + "header")) {
@@ -42,6 +40,8 @@ function dragElement(elmnt) {
   }
 }
 
+dragElement(document.getElementById("title"));
+
 
 // Login form handler
 let login_form = document.getElementById("login_form");
@@ -74,16 +74,11 @@ for (const element of moving_divs) {
        moving_divs_information.push(info);
 }
 
-function on_login_form_submit() {
-
-}
-
 function move_divs() {
        const viewportWidth = window.innerWidth;
        const viewportHeight = window.innerHeight;
 
        for (let i = 0; i < moving_divs.length; i++) {
-              
 
               const curr_moving_div = moving_divs[i];
               const curr_info = moving_divs_information[i];
@@ -110,4 +105,4 @@ function move_divs() {
        requestAnimationFrame(move_divs); // Recursively call move_divs for smooth animation
 }
 
-setTimeout(move_divs, 10000);
+setTimeout(move_divs, 1000);
