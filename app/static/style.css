@@ -90,7 +90,7 @@ input[type="text"] {
 {
     background-color: red;
     border: none;
-    width: 15%; 
+    width: 35%; 
     color: white;
     padding: 4px 7px;
     text-align: center;
@@ -102,7 +102,7 @@ input[type="text"] {
     padding: 20px 30px; 
     color: rgb(0, 40, 40);
     font-size: 24px; 
-    width: 10%;
+    width: 20%;
     font-weight: bold; 
     border: none; 
     border-radius: 5px; 
