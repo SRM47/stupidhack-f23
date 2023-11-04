@@ -2,9 +2,6 @@
 
 {%block content%}
 
-<a href="/login">
-  <button id="logout">Log Out</button>
-
   <table id="calc"> 
       <tr> 
           <td colspan="3"><input type="text" id="result"></td> 
@@ -54,6 +51,9 @@
       </tr> 
   </table> 
   
+
+  <a href="/login">
+    <button id="guestlogin">Log Out</button>
 
 <script src="{{ url_for('static', filename='calculator_script.js')}}"></script>
  
