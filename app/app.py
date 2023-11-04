@@ -13,6 +13,10 @@ def login():
 def calculator_page():
     return render_template('calculator.html')
 
+@app.route("/terms")
+def terms_and_conditions():
+    return render_template('terms.html')
+
 
 if __name__ == "__main__":
        app.run(debug=True)  

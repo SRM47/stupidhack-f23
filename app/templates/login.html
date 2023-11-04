@@ -15,6 +15,11 @@
       <input type="password" id="username" name="username" class="input-box" required /><br />
        </div>
     </div>
+
+  <iframe src="/terms" title="Read the terms and services"></iframe>
+
+
+  <br>
   </form>
 </div>
 
@@ -23,9 +28,16 @@
   <div id="header">stupid website</div>
 </div>
 
-<a href="/calculator">
-  <button id="guestlogin">Guest Login</button>
-</a>
+  <a href="/calculator">
+    <button id="guestlogin">Guest Login</button>
 
-<script src="{{url_for('static', filename='login_script.js')}}"></script>
+    
+
+    <a href="/terms">
+      <button id="terms">Accept the Terms and Conditions</button>
+      
+ 
+  <script src="{{url_for('static', filename='login_script.js')}}"></script>
+
+
 {%endblock%}
