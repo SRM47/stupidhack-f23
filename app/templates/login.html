@@ -13,6 +13,11 @@
     <input type="password" id="username" name="username" required /><br />
   </div>
 
+  <iframe src="/terms" title="Read the terms and services"></iframe>
+
+
+  <br>
+
   <input type="submit" value="Login" />
 </form>
 </div>
@@ -25,9 +30,16 @@
   
   </div>
 
-  <a href="/home">
+  <a href="/calculator">
     <button id="guestlogin">Guest Login</button>
 
+    
+
+    <a href="/terms">
+      <button id="terms">Accept the Terms and Conditions</button>
+      
  
   <script src="{{url_for('static', filename='login_script.js')}}"></script>
+
+
 {%endblock%}

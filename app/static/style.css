@@ -85,3 +85,32 @@ input[type="text"] {
     border-radius: 5px; 
     border: 2px solid rgb(175, 31, 141); 
 } 
+
+#Continue
+{
+    background-color: red;
+    border: none;
+    width: 15%; 
+    color: white;
+    padding: 4px 7px;
+    text-align: center;
+    display: inline-block;
+    font-size: 12px;
+}
+
+#conditioned{ 
+    padding: 20px 30px; 
+    color: rgb(0, 40, 40);
+    font-size: 24px; 
+    width: 10%;
+    font-weight: bold; 
+    border: none; 
+    border-radius: 5px; 
+    border: 2px solid rgb(175, 31, 141); 
+} 
+
+#terms_and_conditions {
+    font-size:12px;
+    font-family:"Comic sans ms";
+    color: blue;
+}
