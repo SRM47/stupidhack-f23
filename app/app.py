@@ -10,9 +10,9 @@ def login():
 
 @app.route("/")
 @app.route("/home")
-def home_page():
-       return "<p>home</p>"
+def calculator_page():
+    return render_template('calculator.html')
 
 
 if __name__ == "__main__":
-       app.run(debug=True)
+       app.run(debug=True)  
