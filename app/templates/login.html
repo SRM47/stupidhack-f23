@@ -1,5 +1,17 @@
-{%extend base.html%}
-
+{%extends "base.html"%}
 {%block content%}
 
+<div id="title">
+    
+
+    <!-- Include a header DIV with the same name as the draggable DIV, followed by "header" -->
+    <div id="header">stupid website</div>
+  
+  </div>
+
+  <a href="/home">
+    <button id="guestlogin">Guest Login</button>
+
+ 
+  <script src="{{url_for('static', filename='login_script.js')}}"></script>
 {%endblock%}
