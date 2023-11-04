@@ -1,5 +1,8 @@
 // Function that display value 
-
+if (localStorage.getItem("login") ===  null){
+       alert("Forbidden page...You haven't logged in!");
+       window.location.replace("http://127.0.0.1:5000/login")
+}
 
 function keyboard(event) { 
     if (event.key == '0' || event.key == '1' 

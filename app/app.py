@@ -3,14 +3,13 @@ from werkzeug.security import generate_password_hash, check_password_hash
 
 app = Flask(__name__)
 
-
+@app.route("/")
 @app.route("/login")
 def login():
        return render_template("login.html")
 
 
-@app.route("/")
-@app.route("/home")
+@app.route("/calculator")
 def calculator_page():
     return render_template('calculator.html')
 
