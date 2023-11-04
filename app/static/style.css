@@ -1,90 +1,140 @@
-body{
+body {
        width: 100%;
-       background-color:bisque;
+       background-color: bisque;
 }
-.moving_div{
+
+.moving_div {
+       border: 10px;
+       align-content: center;
+       background-color: red;
        width: 200px;
        position: relative;
+
 }
-#outer{
-       border: 5px solid;
-       border-color:palevioletred;
-       position: absolute;
+
+#outer {
+       border-color: #d87093;
+       position: fixed;
+       width: 100%;
+       height: 60%;
        top: 50%;
        left: 50%;
-       transform: translate(-50%, -50%);
-       padding: 10px;
-     }
-
-.box{
-       font-size:20px;
-       font-family:"Comic sans ms";
-       color:chartreuse;
+       transform: translate(-50%, -30%);
 }
-#title {
-    position: absolute;
-    z-index: 9;
-    background-color: #f1f1f1;
-    border: 1px solid #d3d3d3;
-    text-align: center;
-  }
-  
+
+.box {
+       font-size: 20px;
+       font-family: "Comic sans ms";
+       color: chartreuse;
+       padding: 5px;
+       margin:auto;
+       justify-content: center;
+    align-items: center;
+}
+
+.inner-box{
+       margin:auto;
+}
+
+#navbar{
+       text-align: center;
+       font-size: 50px;
+       font-family: "Comic sans ms";
+       color:blue;
+       font-weight: bold;
+
+}
+
+.input-box {
+       width: 70%;
+       padding: 2px;
+       border: 1px solid #ccc;
+       border-radius: 5px;
+       font-size: 16px;
+       outline: none;
+}
+
+/* Style the input field on focus */
+.input-box:focus {
+       border-color: #007bff;
+       box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Style placeholder text */
+.input-box::placeholder {
+       color: #999;
+}
+
+/* Style the input field when it has content */
+.input-box:-webkit-autofill {
+       -webkit-box-shadow: 0 0 0 100px white inset;
+}
+
+#guest_login_cover {
+       position: absolute;
+       z-index: 9;
+       background-color: #f1f1f1;
+       border: 1px solid #d3d3d3;
+       text-align: center;
+}
+
 #header {
-    padding: 10px;
-    cursor: move;
-    z-index: 10;
-    background-color: #2196F3;
-    color: #fff;
-  }
+       padding: 10px;
+       cursor: move;
+       z-index: 10;
+       background-color: #2196F3;
+       color: #fff;
+}
 
 #guestlogin {
-    background-color: red;
-    border: none;
-    color: white;
-    padding: 4px 7px;
-    text-align: center;
-    /* text-decoration: none; */
-    display: inline-block;
-    font-size: 12px;
+       background-color: red;
+       border: none;
+       color: white;
+       padding: 4px 7px;
+       text-align: center;
+       /* text-decoration: none; */
+       display: inline-block;
+       font-size: 12px;
 }
 
-#logout{
-    background-color: red;
-    border: none;
-    color: white;
-    padding: 4px 7px;
-    text-align: center;
-    display: inline-block;
-    font-size: 12px;
+#logout {
+       background-color: red;
+       border: none;
+       color: white;
+       padding: 4px 7px;
+       text-align: center;
+       display: inline-block;
+       font-size: 12px;
 }
 
 
-table { 
-    border: 1px solid rgb(255, 179, 179); 
-    margin-left: auto; 
-    margin-right: auto; 
-} 
+table#calc {
+       border: 1px solid rgb(255, 179, 179);
+       margin-left: auto;
+       margin-right: auto;
+}
 
-input[type="button"] { 
-    width: 100%; 
-    padding: 20px 40px; 
-    background-color: rgb(150, 255, 70); 
-    color: rgb(252, 255, 84); 
-    font-size: 25px; 
-    font-weight: bold; 
-    border: none; 
-    border-radius: 10px; 
-} 
+input.calc_button {
+       width: 100%;
+       padding: 20px 40px;
+       background-color: rgb(150, 255, 70);
+       color: rgb(252, 255, 84);
+       font-size: 25px;
+       font-weight: bold;
+       border: none;
+       border-radius: 10px;
+}
 
-input[type="text"] { 
-    padding: 20px 30px; 
-    color: rgb(209, 255, 255);
-    font-size: 24px; 
-    font-weight: bold; 
-    border: none; 
-    border-radius: 5px; 
-    border: 2px solid rgb(175, 31, 141); 
-} 
+input.calc_text {
+       padding: 20px 30px;
+       color: rgb(209, 255, 255);
+       font-size: 24px;
+       font-weight: bold;
+       border: none;
+       border-radius: 5px;
+       border: 2px solid rgb(175, 31, 141);
+}
+
 
 #Continue
 {

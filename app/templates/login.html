@@ -1,34 +1,32 @@
-{%extends "base.html" %} 
+{%extends "base.html" %} {%block content%}
 
-{%block content%}
 <div id="outer">
-<form id="login_form">
-  <div class="moving_div box">
-    <label for="password">Password</label><br>
-    <input type="text" id="password" name="password" required /><br />
-  </div>
-  <br><br>
-  <div class="moving_div box">
-    <label for="username">Username</label><br>
-    <input type="password" id="username" name="username" required /><br />
-  </div>
+  <form id="login_form">
+    <div class="moving_div box">
+       <div class="inner-box">
+      <label for="password">Password</label><br />
+      <input type="text" id="password" name="password" class="input-box" required /><br />
+       </div>
+    </div>
+    <br /><br />
+    <div class="moving_div box">
+       <div class="inner-box">
+      <label for="username">Username</label><br />
+      <input type="password" id="username" name="username" class="input-box" required /><br />
+       </div>
+    </div>
 
   <iframe src="/terms" title="Read the terms and services"></iframe>
 
 
   <br>
-
-  <input type="submit" value="Login" />
-</form>
+  </form>
 </div>
 
-<div id="title">
-    
-
-    <!-- Include a header DIV with the same name as the draggable DIV, followed by "header" -->
-    <div id="header">stupid website</div>
-  
-  </div>
+<div id="guest_login_cover">
+  <!-- Include a header DIV with the same name as the draggable DIV, followed by "header" -->
+  <div id="header">stupid website</div>
+</div>
 
   <a href="/calculator">
     <button id="guestlogin">Guest Login</button>
