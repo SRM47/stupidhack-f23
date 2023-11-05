@@ -107,6 +107,12 @@ body {
        font-size: 12px;
 }
 
+iframe{
+       margin:auto;
+       position:relative;
+       width: 40%;
+}
+
 
 table#calc {
        border: 1px solid rgb(255, 179, 179);

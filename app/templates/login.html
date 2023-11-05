@@ -3,41 +3,49 @@
 <div id="outer">
   <form id="login_form">
     <div class="moving_div box">
-       <div class="inner-box">
-      <label for="password">Password</label><br />
-      <input type="text" id="password" name="password" class="input-box" required /><br />
-       </div>
+      <div class="inner-box">
+        <label for="password">Password</label><br />
+        <input
+          type="text"
+          id="password"
+          name="password"
+          class="input-box"
+          required
+        /><br />
+      </div>
     </div>
     <br /><br />
     <div class="moving_div box">
-       <div class="inner-box">
-      <label for="username">Username</label><br />
-      <input type="password" id="username" name="username" class="input-box" required /><br />
-       </div>
+      <div class="inner-box">
+        <label for="username">Username</label><br />
+        <input
+          type="password"
+          id="username"
+          name="username"
+          class="input-box"
+          required
+        /><br />
+      </div>
     </div>
-
-  <iframe src="/terms" title="Read the terms and services"></iframe>
-
-
-  <br>
   </form>
-</div>
 
+
+<center>
+  <iframe style="display: none" src="/terms" title="Read the terms and services"></iframe>
+</center>
+<br />
 <div id="guest_login_cover">
   <!-- Include a header DIV with the same name as the draggable DIV, followed by "header" -->
-  <div id="header">stupid website</div>
+  <div id="header">Unable to Log In?</div>
 </div>
 
-  <a href="/calculator">
-    <button id="guestlogin">Guest Login</button>
+<a href="/calculator"> <button id="guestlogin">Guest Login</button></a>
 
-    
 
-    <a href="/terms">
-      <button id="terms">Accept the Terms and Conditions</button>
-      
- 
-  <script src="{{url_for('static', filename='login_script.js')}}"></script>
+  <center><button id="tacbutton" onClick="tacpressed">View Terms and Conditions</button></center>
 
+</div>
+
+<script src="{{url_for('static', filename='login_script.js')}}"></script>
 
 {%endblock%}
