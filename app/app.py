@@ -22,7 +22,7 @@ def feedback():
     return render_template('feedback.html')
 
 @app.route("/feedback/submit")
-def feedback():
+def feedback2():
     return render_template('feedback_submission.html')
 
 if __name__ == "__main__":

@@ -423,13 +423,14 @@ function flipCoin(){
         document.getElementById("conditioned").value = "Heads"
 
         setTimeout(function() {
-            location.assign("/login");
+            // location.assign("/login");
+            parent.location.reload()
         }, 1000);
     } else {
         
         document.getElementById("conditioned").value = "Tails"
         setTimeout(function() {
-            location.assign("/calculator");
+            parent.location.assign("/calculator");
         }, 1000);
     }
 }
