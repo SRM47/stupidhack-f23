@@ -56,6 +56,11 @@ login_form.addEventListener("submit", (e) => {
        console.log(password);
 });
 
+document.getElementById("tacbutton").addEventListener("click", function () {
+       document.getElementsByTagName("iframe")[0].style.display = "block";
+
+})
+
 const scale_factor = 4;
 const moving_divs = document.getElementsByClassName('moving_div');
 
