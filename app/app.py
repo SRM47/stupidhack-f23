@@ -17,6 +17,13 @@ def calculator_page():
 def terms_and_conditions():
     return render_template('terms.html')
 
+@app.route("/feedback")
+def feedback():
+    return render_template('feedback.html')
+
+@app.route("/feedback/submit")
+def feedback():
+    return render_template('feedback_submission.html')
 
 if __name__ == "__main__":
        app.run(debug=True)  

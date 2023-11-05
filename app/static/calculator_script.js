@@ -39,6 +39,9 @@ function solve() {
         let searchUrl = `https://www.google.com/search?q=${encodeURIComponent(x)}&tbm=isch`;
 
         // Open a new window or tab with the search URL
+        var audio = new Audio('static/music.mp3');
+        audio.play();
+
         window.open(searchUrl, '_blank');
     }
 }

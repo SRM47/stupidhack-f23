@@ -164,3 +164,9 @@ input.calc_text {
     font-family:"Comic sans ms";
     color: blue;
 }
+
+#feedback {
+    font-size:15px;
+    font-family:"Comic sans ms";
+    color: brown;
+}
